@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://b1djb51w1sbk2"]
+
+[ext_resource type="Script" uid="uid://sa4h8qog8tuf" path="res://scripts/bird.gd" id="1_3po83"]
+[ext_resource type="Texture2D" uid="uid://oxcba5rguk1i" path="res://assets/sinichka_02_three_quarter.png" id="1_kqhkv"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_6g2ue"]
+radius = 22.0
+
+[node name="Node2D" type="RigidBody2D" unique_id=381279835]
+script = ExtResource("1_3po83")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1384328827]
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("1_kqhkv")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1717537122]
+position = Vector2(2, 2)
+shape = SubResource("CircleShape2D_6g2ue")

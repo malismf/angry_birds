@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://bsc4kjjuapi42"]
+
+[ext_resource type="Script" uid="uid://pkm1lgihpxi1" path="res://scripts/main.gd" id="1_sugp2"]
+[ext_resource type="PackedScene" uid="uid://8glfv35xxnuv" path="res://scenes/slingshot.tscn" id="4_jyhfs"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6g2ue"]
+size = Vector2(1154, 177)
+
+[node name="Main" type="Node2D" unique_id=1237774345]
+script = ExtResource("1_sugp2")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=900414006]
+position = Vector2(3, 494)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1646053940]
+position = Vector2(567, 78.5)
+shape = SubResource("RectangleShape2D_6g2ue")
+
+[node name="Node2D" parent="." unique_id=2023397206 instance=ExtResource("4_jyhfs")]
+position = Vector2(205, 408)

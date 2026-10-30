@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://8glfv35xxnuv"]
+
+[ext_resource type="Texture2D" uid="uid://rp4c0kc5yl7x" path="res://assets/rogatka_vyshe_uzhe_bez_rezinki.png" id="1_d67ah"]
+[ext_resource type="Script" uid="uid://3ngmq5f8tbra" path="res://scripts/slingshot.gd" id="1_fipy2"]
+[ext_resource type="PackedScene" uid="uid://b1djb51w1sbk2" path="res://scenes/bird.tscn" id="3_3aosl"]
+
+[node name="Node2D" type="Node2D" unique_id=2023397206]
+script = ExtResource("1_fipy2")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2077028394]
+position = Vector2(0, 22)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("1_d67ah")
+
+[node name="Bird" parent="." unique_id=381279835 instance=ExtResource("3_3aosl")]
